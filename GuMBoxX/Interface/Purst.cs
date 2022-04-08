@@ -4,7 +4,8 @@ using System.Text;
 
 namespace GuMBoxX.Interface
 {
-    internal class Purst
+   public class Purst
     {
+
     }
 }

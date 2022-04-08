@@ -4,7 +4,20 @@ using System.Text;
 
 namespace GuMBoxX.Models
 {
-    internal class AssaulRifle
+    public class AssaulRifle : Gun
     {
+        public int CurrentBulletType;
+        public Pistol BulletType;
+
+        public AssaulRifle(string name, int capacity) : base(name, capacity)
+        {
+
+
+        }
+
+        public override string GetFullInfo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

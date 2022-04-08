@@ -6,23 +6,26 @@ namespace GuMBoxX.Models
 {
     public class Bullet<T> : Base
     {
-        public T BulletType {get; set;)
+        private T[] BulletType;
+        public T[] GetBulletType()
+        {
+            return BulletType;
+        }
+        public int Length
+        {
+            get
+            {
+                return BulletType.Length;
+            }
+        }
 
-         Bullet<double> bullets = new Bullet<double>();
-
-        public T[] bullet = new T[4];
-        Bullet.BulletType bulletType;   
 
 
-        
-        
-        
 
 
-       
 
-       
-      
+
+
 
 
 

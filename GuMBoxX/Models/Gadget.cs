@@ -4,7 +4,9 @@ using System.Text;
 
 namespace GuMBoxX.Models
 {
-    internal class Gadget
+    public class Gadget : Base
     {
+        public int CurrentBulletType;
+        public Gadget BulletType;
     }
 }
