@@ -4,8 +4,8 @@ using System.Text;
 
 namespace GuMBoxX.Interface
 {
-   public class Purst
+    public interface IBurstShot
     {
-
+        void burstshot();
     }
 }

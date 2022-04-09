@@ -4,7 +4,9 @@ using System.Text;
 
 namespace GuMBoxX.Interface
 {
-    internal class Single
+    internal interface ISingleShot
     {
+        void single();
+
     }
 }

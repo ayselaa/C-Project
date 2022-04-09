@@ -1,11 +1,13 @@
-﻿using System;
+﻿using GuMBoxX.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace GuMBoxX.Models
 {
-    public class SniperRifle : Gun
+    public class SniperRifle : Gun, ISingleShot
     {
+
         private Dictionary<int, SniperRifle> _dictionary = new Dictionary<int, SniperRifle>();
 
         public SniperRifle(string name, int capacity) : base(name, capacity)
@@ -24,6 +26,16 @@ namespace GuMBoxX.Models
             {
                 Console.WriteLine(item.Value.Name);
             }
+        }
+
+        public void single()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void singleshot()
+        {
+            throw new NotImplementedException();
         }
     }
 }
