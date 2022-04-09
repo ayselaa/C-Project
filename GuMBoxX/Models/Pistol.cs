@@ -8,10 +8,6 @@ namespace GuMBoxX.Models
     public class Pistol : Gun
     {
         private Dictionary<int, Pistol> _dictionary = new Dictionary<int, Pistol>();
-
-        public int CurrentBulletType;
-        public Pistol BulletType;
-
         public Pistol(string name, int capacity) : base(name, capacity)
         {
             _dictionary.Add(Id, this);

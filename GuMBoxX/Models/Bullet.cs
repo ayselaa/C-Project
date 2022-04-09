@@ -19,20 +19,5 @@ namespace GuMBoxX.Models
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

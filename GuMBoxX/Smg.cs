@@ -2,28 +2,31 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GuMBoxX.Models
+namespace GuMBoxX
 {
-    public class SniperRifle : Gun
+    internal class Smg
     {
-        private Dictionary<int, SniperRifle> _dictionary = new Dictionary<int, SniperRifle>();
-
-        public SniperRifle(string name, int capacity) : base(name, capacity)
+        private Dictionary<int, Pistol> _dictionary = new Dictionary<int, Pistol>();
+        public Smg(string v1, int v2)
         {
-            _dictionary.Add(Id, this);
+            V1 = v1;
+            V2 = v2;
         }
+
+        public string V1 { get; }
+        public int V2 { get; }
 
         public override string GetFullInfo()
         {
             throw new NotImplementedException();
         }
-
         public void ShowMethod()
         {
             foreach (var item in _dictionary)
             {
                 Console.WriteLine(item.Value.Name);
             }
+
+
         }
-    }
 }
