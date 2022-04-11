@@ -21,9 +21,9 @@ namespace GuMBoxX.Models
           get { return _capacity; }
           set
           {
-              if (value <= 1)
+              if (value < 1)
               {
-                    throw new ArgumentOutOfRangeException();
+              
               }
                 _capacity = value;
 

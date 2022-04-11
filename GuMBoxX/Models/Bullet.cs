@@ -4,19 +4,16 @@ using System.Text;
 
 namespace GuMBoxX.Models
 {
-    public class Bullet<T> : Base
+    public class Bullet : Base
     {
-        private T[] BulletType;
-        public T[] GetBulletType()
+        private string [] _BulletType;
+        public string [] GetBulletType()
         {
-            return BulletType;
+            return _BulletType;
         }
-        public int Length
+        public int Length()
         {
-            get
-            {
-                return BulletType.Length;
-            }
+            return  _BulletType.Length;
         }
 
     }

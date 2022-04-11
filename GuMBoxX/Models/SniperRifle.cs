@@ -7,25 +7,27 @@ namespace GuMBoxX.Models
 {
     public class SniperRifle : Gun, ISingleShot
     {
-
-        private Dictionary<int, SniperRifle> _dictionary = new Dictionary<int, SniperRifle>();
-
         public SniperRifle(string name, int capacity) : base(name, capacity)
         {
-            _dictionary.Add(Id, this);
         }
+
+        //private Dictionary<int, SniperRifle> _dictionary = new Dictionary<int, SniperRifle>();
+
+        //public SniperRifle(string name, int capacity) : base(name, capacity)
+        //{
+        //    _dictionary.Add(Id, this);
+        //}
 
         public override string GetFullInfo()
         {
-            throw new NotImplementedException();
+            return $"name {Name},capacity {Capacity}";
         }
 
-        public void ShowMethod()
+
+
+        public void ShowMethod(SniperRifle sniperRifle)
         {
-            foreach (var item in _dictionary)
-            {
-                Console.WriteLine(item.Value.Name);
-            }
+            
         }
 
         public void single()

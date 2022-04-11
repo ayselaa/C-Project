@@ -7,12 +7,16 @@ namespace GuMBoxX.Models
 {
     public class AssaulRifle : Gun, IAutoShot, IBurstShot
     {
-        private Dictionary<int, AssaulRifle> _dictionary = new Dictionary<int, AssaulRifle>();
-
         public AssaulRifle(string name, int capacity) : base(name, capacity)
         {
-            _dictionary.Add(Id, this);
         }
+
+        //  private Dictionary<int, AssaulRifle> _dictionary = new Dictionary<int, AssaulRifle>();
+
+        //public AssaulRifle(string name, int capacity) : base(name, capacity)
+        //{
+        //    _dictionary.Add(Id, this);
+        //}
 
         public void burstshot()
         {
@@ -21,19 +25,25 @@ namespace GuMBoxX.Models
 
         public override string GetFullInfo()
         {
-            throw new NotImplementedException();
+            return $"name {Name},capacity {Capacity}";
         }
-        public void ShowMethod()
+        public void ShowMethod(AssaulRifle AssaulRifle, AssaulRifle assaulRifle)
         {
-            foreach (var item in _dictionary)
-            {
-                Console.WriteLine(item.Value.Name);
-            }
+            Console.WriteLine(AssaulRifle);
         }
-
+        
         void IAutoShot.autoshot()
         {
             throw new NotImplementedException();
         }
+       
+
+        internal void ShowMethod(AssaulRifle assaul)
+        {
+          
+
+        }
+
+        
     }
 }

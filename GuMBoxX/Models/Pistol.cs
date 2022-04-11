@@ -17,7 +17,7 @@ namespace GuMBoxX.Models
 
         public override string GetFullInfo()
         {
-            throw new NotImplementedException();
+            return $"name {Name},capacity {Capacity}";
         }
         public void ShowMethod()
         {
